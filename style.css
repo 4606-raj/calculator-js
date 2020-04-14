@@ -25,6 +25,7 @@ body {
 }
 
 .result {
+	overflow: hidden;
 	height: 25%;
 	border-bottom: 1px solid grey
 }
@@ -60,16 +61,18 @@ body {
 	font-size: 15px;
 }
 
-
+/*when key is pressed.*/
 .operator:active, .number:active {
 	font-size: 13px;
 	margin-bottom: 0;
 }
 
+/*when key is hovered.*/
 .operator:hover, .number:hover {
 	box-shadow: 0 0 1px 2px #ccc;
 	transition: .2s ease;
 }
+
 
 .operator:focus, .number:focus {
 	outline: none;
